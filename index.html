@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOANG THI BICH HUYEN | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Pastel Header -->
+  <header class="pastel-hero">
+    <div class="hero-inner">
+      <p class="hero-kicker">FINANCIAL DATA ANALYST</p>
+      <h1 class="hero-title">Portfolio</h1>
+
+      <!-- avatar (tuỳ chọn) -->
+    <div class="hero-mark" aria-hidden="true">
+        <div class="mark-top">
+            <span class="dot d1"></span>
+            <span class="dot d2"></span>
+            <span class="dot d3"></span>
+        </div>
+
+        <svg class="spark" viewBox="0 0 120 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 34 C 20 18, 30 26, 44 20 C 58 14, 66 22, 78 14 C 90 6, 100 18, 114 10"
+                stroke="rgba(17,24,39,0.85)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M6 34 C 20 18, 30 26, 44 20 C 58 14, 66 22, 78 14 C 90 6, 100 18, 114 10"
+                stroke="rgba(106,169,255,0.55)" stroke-width="8" stroke-linecap="round"/>
+        </svg>
+
+    <div class="mark-label">Insight</div>
+</div>
+
+      <p class="hero-sub">
+        데이터로 문제를 정의하고, 금융 관점의 인사이트로 해결책을 제안합니다.
+      </p>
+      <div class="hero-links">
+        <a class="pill" href="#projects">Projects</a>
+        <a class="pill ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="wrap">
+
+    <!-- Title row -->
+    <section class="title-row">
+      <h2 class="name">HOANG THI BICH HUYEN</h2>
+      <p class="role">Financial Data Analyst · Python · SQL · Tableau</p>
+    </section>
+
+    <!-- Intro card row -->
+    <section class="grid-2">
+      <div class="card soft">
+        <div class="card-head">
+          <span class="icon">★</span>
+          <h3>Designer Portfolio 느낌으로, 하지만 Data/Finance 중심</h3>
+        </div>
+        <p class="muted">
+          한국에서 금융 석사를 전공하며 데이터 분석을 공부하고 있습니다.
+          분석 결과를 “실행 가능한 액션”으로 연결하는 것을 목표로 합니다.
+        </p>
+        <ul class="mini">
+          <li><b>Strength</b> · 논리적 정리 / 문서화 / 인사이트 도출</li>
+          <li><b>Interest</b> · 금융 데이터 / 투자 / 리스크</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Contact</h3>
+        <div class="info">
+          <div><span>이름</span><b>HOANG THI BICH HUYEN</b></div>
+          <div><span>Email</span><a href="mailto:your_email@gmail.com">bichhuyen3108@gmail.com</a></div>
+          <div><span>GitHub</span><a href="#">github.com/bichhuyen3108-max</a></div>
+          <div><span>LinkedIn</span><a href="#">linkedin.com/in/yourname</a></div>
+        </div>
+        <a class="btn" href="#" download>Resume(PDF) 다운로드</a>
+      </div>
+    </section>
+
+    <!-- Experience / Projects -->
+    <section id="projects" class="section">
+      <div class="section-title">
+        <h3>Projects</h3>
+        <p class="muted">“문제 → 방법 → 결과 → 인사이트” 구조로 정리</p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h4>Stock Price Prediction (KOSPI)</h4>
+              <span class="tag">Python · ML</span>
+            </div>
+            <p class="muted">
+              KOSPI 기반 시계열 데이터를 활용해 예측 모델을 구축하고 성능 비교를 진행했습니다.
+            </p>
+            <ul class="bullets">
+              <li><b>Problem:</b> 변동성 구간에서 예측 성능 저하</li>
+              <li><b>Method:</b> Feature engineering + RF/LSTM 비교</li>
+              <li><b>Result:</b> RMSE 개선, 주요 변수 도출</li>
+              <li><b>Insight:</b> 거시 변수/섹터 변수 분리 필요</li>
+            </ul>
+            <div class="links">
+              <a href="#">GitHub</a> · <a href="#">Report</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h4>Customer Segmentation</h4>
+              <span class="tag">SQL · Clustering</span>
+            </div>
+            <p class="muted">
+              구매 데이터 기반으로 고객을 군집화하고 그룹별 전략을 제안했습니다.
+            </p>
+            <ul class="bullets">
+              <li><b>Method:</b> RFM + K-means</li>
+              <li><b>Result:</b> 4개 그룹 도출 / 고가치 그룹 정의</li>
+              <li><b>Insight:</b> 그룹별 메시지/혜택 차별화 필요</li>
+            </ul>
+            <div class="links">
+              <a href="#">GitHub</a> · <a href="#">Dashboard</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-card">
+            <div class="t-top">
+              <h4>Financial KPI Dashboard</h4>
+              <span class="tag">Tableau · Excel</span>
+            </div>
+            <p class="muted">
+              KPI를 드릴다운 가능한 대시보드로 구성하여 이슈 탐지 시간을 단축했습니다.
+            </p>
+            <ul class="bullets">
+              <li><b>KPIs:</b> Revenue, Margin, CAC, Retention</li>
+              <li><b>Insight:</b> 코호트 기반 리텐션 개선이 핵심</li>
+            </ul>
+            <div class="links">
+              <a href="#">Dashboard</a> · <a href="#">Slide</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-title">
+        <h3>Message</h3>
+        <p class="muted">면접/협업 제안은 편하게 연락 주세요.</p>
+      </div>
+
+      <div class="card soft">
+        <p class="muted" style="margin:0;">
+          이메일: <a href="mailto:your_email@gmail.com">bichhuyen3108@gmail.com</a>
+          · GitHub: <a href="#">github.com/bichhuyen3108-max</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> HOANG THI BICH HUYEN</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
