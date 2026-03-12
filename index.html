@@ -99,13 +99,14 @@
               한국 반도체 3개 기업 포트폴리오를 대상으로 시장 리스크를 정량적으로 분석한 프로젝트입니다.
               VaR, CVaR, GARCH, Kupiec Backtest를 활용해 변동성 국면과 tail risk를 평가했습니다.
             </p>
+
             <ul class="bullets">
               <li><b>Problem:</b> 반도체 포트폴리오의 하방 리스크와 변동성 구조를 정량적으로 측정</li>
               <li><b>Method:</b> Historical VaR, Student-t VaR, CVaR, GARCH Volatility, Kupiec Backtest, Stress Testing</li>
               <li><b>Result:</b> VaR 95% ≈ -2.78%, CVaR 95% ≈ -4.19%로 최악 구간 손실 위험이 확대됨을 확인</li>
-              <li><b>Insight:</b> 2020년 및 최근 고변동성 구간에서 violation이 군집적으로 발생해 stress regime에서 더 보수적인 리스크 관리가 필요</li>
               <li><b>Tech Stack:</b> Python, Pandas, NumPy, Matplotlib, ARCH, Financial Time Series</li>
             </ul>
+
             <div class="project-images" style="display:flex; flex-direction:column; align-items:center; gap:24px; width:100%;">
               <img src="images/return_vs_var_zoom_95.png" alt="Portfolio Return vs VaR"
                 style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto; border-radius:12px;">
@@ -113,6 +114,17 @@
               <img src="images/forecast_vs_realized.png" alt="Forecast VaR vs Realized Return"
                 style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto; border-radius:12px;">
             </div>
+
+            <div class="insight-box">
+              <h4>Key Insights</h4>
+              <ul>
+                <li><b>Volatility Clustering</b> – 시장 충격 구간에서 VaR violation이 군집적으로 발생하여 변동성 군집 현상이 확인되었습니다.</li>
+                <li><b>Fat-Tail Risk</b> – Student-t VaR는 Historical VaR보다 극단적 손실 가능성을 더 보수적으로 반영했습니다.</li>
+                <li><b>Volatility Regime Shift</b> – GARCH 기반 분석을 통해 시장이 Low/High volatility regime 사이를 전환하는 특징을 확인했습니다.</li>
+                <li><b>Dynamic Risk Management</b> – 포트폴리오 리스크는 고정적이지 않으며 시장 변동성 상태에 따라 동적으로 관리할 필요가 있습니다.</li>
+              </ul>
+            </div>
+
           </div>
         </article>
       </div>
