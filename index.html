@@ -33,7 +33,7 @@
 </div>
 
       <p class="hero-sub">
-        데이터로 문제를 정의하고, 금융 관점의 인사이트로 해결책을 제안합니다.
+        금융 데이터 분석을 통해 시장 리스크와 투자 인사이트를 도출하는 Financial Data Analyst입니다.
       </p>
       <div class="hero-links">
         <a class="pill" href="#projects">Projects</a>
@@ -48,7 +48,7 @@
     <!-- Title row -->
     <section class="title-row">
       <h2 class="name">HOANG THI BICH HUYEN</h2>
-      <p class="role">Financial Data Analyst · Python · SQL · Excel</p>
+      <p class="role">Financial & Risk Data Analyst · Python · SQL · Time Series · Risk Modeling</p>
     </section>
 
     <!-- Intro card row -->
@@ -96,14 +96,16 @@
               <span class="tag">Python · Risk · Finance</span>
             </div>
             <p class="muted">
-              한국 반도체 3개 기업 포트폴리오를 대상으로 시장 리스크를 정량적으로 분석한 프로젝트입니다.
-              VaR, CVaR, GARCH, Kupiec Backtest를 활용해 변동성 국면과 tail risk를 평가했습니다.
+              한국 반도체 산업 3개 기업(Samsung Electronics, SK Hynix, Samsung SDI) 포트폴리오를 대상으로
+              시장 리스크를 정량적으로 분석한 금융 데이터 프로젝트입니다.
+              VaR, CVaR, GARCH 모델과 Kupiec Backtest를 활용해 변동성 체계와 tail risk를 분석했습니다.
             </p>
 
             <ul class="bullets">
               <li><b>Problem:</b> 반도체 포트폴리오의 하방 리스크와 변동성 구조를 정량적으로 측정</li>
               <li><b>Method:</b> Historical VaR, Student-t VaR, CVaR, GARCH Volatility, Kupiec Backtest, Stress Testing</li>
-              <li><b>Result:</b> VaR 95% ≈ -2.78%, CVaR 95% ≈ -4.19%로 최악 구간 손실 위험이 확대됨을 확인</li>
+              <li><b>Result:</b> VaR/CVaR 분석을 통해 극단적 손실 구간의 tail risk를 확인하고,
+              GARCH 기반 변동성 모델링을 통해 시장 스트레스 구간에서 리스크가 집중되는 volatility regime를 식별</li>
               <li><b>Tech Stack:</b> Python, Pandas, NumPy, Matplotlib, ARCH, Financial Time Series</li>
             </ul>
 
@@ -113,16 +115,45 @@
             
               <img src="images/forecast_vs_realized.png" alt="Forecast VaR vs Realized Return"
                 style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto; border-radius:12px;">
-            </div>
+              
+                <img src="images/garch_volatility_regime.png" alt="GARCH Volatility Regime"
+                  style="display:block; width:100%; max-width:720px; height:auto; margin:0 auto; border-radius:12px;">
+              </div>
 
-            <div class="insight-box">
-              <h4>Key Insights</h4>
-              <ul>
-                <li><b>Volatility Clustering</b> – 시장 충격 구간에서 VaR violation이 군집적으로 발생하여 변동성 군집 현상이 확인되었습니다.</li>
-                <li><b>Fat-Tail Risk</b> – Student-t VaR는 Historical VaR보다 극단적 손실 가능성을 더 보수적으로 반영했습니다.</li>
-                <li><b>Volatility Regime Shift</b> – GARCH 기반 분석을 통해 시장이 Low/High volatility regime 사이를 전환하는 특징을 확인했습니다.</li>
-                <li><b>Dynamic Risk Management</b> – 포트폴리오 리스크는 고정적이지 않으며 시장 변동성 상태에 따라 동적으로 관리할 필요가 있습니다.</li>
-              </ul>
+          <div class="insight-box">
+            <h4>Risk Analysis Insights</h4>
+          
+            <ul>
+          
+              <li><b>VaR Model Performance</b> – Portfolio Return vs VaR 그래프에서
+                일부 구간에서 실제 손실이 VaR 예측 범위를 초과하는
+                VaR violation이 발생했습니다. 특히 시장 충격 기간에
+                violation이 집중되는 특징이 관찰되었습니다.</li>
+          
+              <li><b>Volatility Clustering</b> – Forecast VaR와 Realized Return 비교에서
+                극단적 손실이 특정 기간에 집중적으로 발생하는
+                Volatility Clustering 현상이 확인되었습니다.</li>
+          
+              <li><b>Fat-Tail Risk</b> – Student-t VaR는 Historical VaR보다
+                금융 수익률의 Fat Tail 특성을 반영하여
+                극단적 손실 가능성을 더 보수적으로 추정했습니다.</li>
+          
+              <li><b>Volatility Regime Shift</b> – GARCH Volatility Regime 분석 결과
+                시장 변동성은 Low / Moderate / High regime 사이를 순환하며
+                특히 2020년 COVID 시장 충격 구간에서
+                High volatility regime이 집중적으로 나타났습니다.</li>
+          
+              <li><b>Dynamic Risk Management</b> – 분석 결과 포트폴리오 리스크는
+                고정된 값이 아니라 시장 변동성 상태에 따라 지속적으로 변하기 때문에
+                Volatility Regime 기반의 동적 리스크 관리 전략이 필요합니다.</li>
+          
+            </ul>
+          </div>
+
+            <div class="project-links">
+              <a href="https://github.com/bichhuyen3108-max/semiconductor-portfolio-risk" target="_blank" class="btn">
+                View GitHub Repository
+              </a>
             </div>
 
           </div>
