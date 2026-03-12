@@ -92,19 +92,27 @@
           <div class="t-dot"></div>
           <div class="t-card">
             <div class="t-top">
-              <h4>Semiconductor Portfolio Market Risk Analysis</h4>
+              <h4>Korean Semiconductor Portfolio Risk Analysis</h4>
               <span class="tag">Python · Risk · Finance</span>
             </div>
             <p class="muted">
-              한국 반도체 기업 포트폴리오를 대상으로 시장 리스크를 정량적으로 분석한 프로젝트입니다.
-              VaR, CVaR, GARCH, Backtesting을 활용하여 변동성 국면과 tail risk를 평가했습니다.
+              한국 반도체 3개 기업 포트폴리오를 대상으로 시장 리스크를 정량적으로 분석한 프로젝트입니다.
+              VaR, CVaR, GARCH, Kupiec Backtest를 활용해 변동성 국면과 tail risk를 평가했습니다.
             </p>
             <ul class="bullets">
               <li><b>Problem:</b> 반도체 포트폴리오의 하방 리스크와 변동성 구조를 정량적으로 측정</li>
-              <li><b>Method:</b> Historical VaR, Student-t VaR, CVaR, GARCH Volatility, Kupiec Backtest</li>
-              <li><b>Result:</b> 스트레스 구간에서 tail risk 확대와 VaR 예측 한계 확인</li>
-              <li><b>Insight:</b> 정상 구간보다 고변동성 구간에서 리스크 관리 기준을 강화할 필요가 있음</li>
+              <li><b>Method:</b> Historical VaR, Student-t VaR, CVaR, GARCH Volatility, Kupiec Backtest, Stress Testing</li>
+              <li><b>Result:</b> VaR 95% ≈ -2.78%, CVaR 95% ≈ -4.19%로 최악 구간 손실 위험이 확대됨을 확인</li>
+              <li><b>Insight:</b> 2020년 및 최근 고변동성 구간에서 violation이 군집적으로 발생해 stress regime에서 더 보수적인 리스크 관리가 필요</li>
+              <li><b>Tech Stack:</b> Python, Pandas, NumPy, Matplotlib, ARCH, Financial Time Series</li>
             </ul>
+            <div class="project-images">
+            
+              <img src="images/return_vs_var_zoom_95.png" alt="Portfolio Return vs VaR" class="project-img">
+            
+              <img src="images/forecast_vs_realized.png" alt="Forecast VaR vs Realized Return" class="project-img">
+            
+            </div>
             <div class="links">
               <a href="https://github.com/bichhuyen3108-max/semiconductor-portfolio-risk" target="_blank">GitHub</a>
               ·
@@ -113,7 +121,6 @@
             </div>
           </div>
         </article>
-
       </div>
     </section>
 
