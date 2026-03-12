@@ -322,15 +322,19 @@ body{
   text-transform: uppercase;
 }
 
+/* Project chart layout */
+
 .project-images {
   display: flex;
-  gap: 20px;
-  margin-top: 15px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
 }
 
-.project-img {
-  width: 320px;
+.project-chart {
+  width: 100%;
+  max-width: 720px;
   border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
