@@ -97,10 +97,12 @@ body{
   text-align:center;
   margin: 8px 0 18px;
 }
-.name{
-  margin:0;
-  font-size: 22px;
-  letter-spacing:-0.02em;
+.name {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #6366f1, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .role{
   margin:8px 0 0;
