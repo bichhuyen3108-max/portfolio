@@ -131,11 +131,6 @@ body{
 .card h3{ margin:0 0 10px; font-size: 15px; }
 .muted{ color: var(--muted); }
 
-.card-head{
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-}
 .icon{
   width:22px;height:22px;
   border-radius:8px;
@@ -366,4 +361,58 @@ body{
 .insight-box li {
   margin-bottom: 10px;
   line-height: 1.6;
+}
+
+/* profile*/
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 28px 0 36px;
+  padding: 24px 28px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.profile-photo-wrap {
+  flex: 0 0 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+.profile-intro {
+  flex: 1;
+}
+
+.profile-intro h3 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+}
+
+.profile-intro p {
+  margin: 0 0 12px 0;
+  line-height: 1.75;
+  color: #4b5563;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo-wrap {
+    flex: 0 0 auto;
+  }
 }
